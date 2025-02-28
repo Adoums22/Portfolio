@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../Assets/logo3.png";
-import { AiOutlineHome, AiOutlineFundProjectionScreen, AiOutlineUser, AiFillStar } from "react-icons/ai";
+import logo from "../Assets/logo.png";
+import { AiOutlineHome, AiOutlineUser, AiFillStar } from "react-icons/ai";
 import { CgFileDocument, CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
 
 export default function NavBar() {
   const [expand, setExpand] = useState(false);
@@ -24,40 +23,35 @@ export default function NavBar() {
       }`}
     >
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        {/* Logo */}
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
         </Link>
-
-        {/* Bouton de menu mobile */}
-        <button
-          onClick={() => setExpand(!expand)}
-          className="md:hidden text-white focus:outline-none"
-        >
-          ☰
-        </button>
-
-        {/* Menu principal */}
-        <div className={`md:flex items-center gap-6 md:block`}>
+      <button
+      onClick={() => setExpand(!expand)}
+      className="md:hidden text-white text-2xl focus:outline-none relative z-50"
+      >
+      {expand ? "✖" : "☰"}
+      </button>
+      {expand && (
+      <div className="fixed inset-0 bg-gray-900/60 backdrop-blur-md transition-all duration-300"></div>
+      )}
+    <div className={`md:flex items-center gap-6 md:block`}>
           {[
             { to: "/", label: "Introduction", icon: <AiOutlineHome className="text-xl" /> },
             { to: "/about", label: "À propos", icon: <AiOutlineUser className="text-xl" /> },
-            { to: "/resume", label: "Projets", icon: <CgFileDocument className="text-xl" /> },
+            { to: "/projects", label: "Projets", icon: <CgFileDocument className="text-xl" /> },
             { to: "/contact", label: "Contactez-moi", icon: <CgFileDocument className="text-xl" /> },
           ].map((item, index) => (
             <Link
-  key={index}
-  to={item.to}
-  className="flex items-center gap-2 text-white relative group"
->
-  {item.icon}
-  <span>{item.label}</span>
-  <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-lime-500 transition-all duration-700 group-hover:w-full"></span>
-</Link>
-
+            key={index}
+            to={item.to}
+            className="flex items-center gap-2 text-white relative group"
+            >
+              {item.icon}
+            <span>{item.label}</span>
+            <span className="absolute left-0 bottom-0 w-0 h-0.5 bg-lime-500 transition-all duration-700 group-hover:w-full"></span>
+            </Link>
           ))}
-
-          {/* Bouton GitHub */}
           <a
             href="https://github.com/Adoums22"
             target="_blank"
