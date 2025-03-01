@@ -53,45 +53,47 @@ const projects = [
 
 export default function SelfProjects() {
   return (
-    <div className="flex flex-col items-center text-white p-16 mt-20">
-      <h2 className="text-3xl font-bold mb-10">
+    <div className="flex flex-col items-center text-white px-4 sm:px-8 lg:px-16 py-10 mt-20 w-full">
+      <h2 className="text-3xl font-bold mb-10 text-center">
         Mes <span className="text-lime-500">Projets</span>
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {projects.map((project, index) => (
-          <div
-            key={index}
-            className="border-4 border-lime-500 rounded-2xl p-5 w-80 bg-transparent text-center shadow-lg shadow-lime-500 flex flex-col h-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"
-          >
-            <img src={project.image} alt={project.title} className="w-full h-40 object-contain rounded-lg mb-4" />
-            <h3 className="text-xl font-semibold">{project.title}</h3>
-            <p className="text-gray-300 text-sm flex-grow mb-4">{project.description}</p>
+      <div className="w-full flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projects.map((project, index) => (
+            <div
+              key={index}
+              className="border-4 border-lime-500 rounded-2xl p-5 bg-transparent text-center shadow-lg shadow-lime-500 flex flex-col h-full transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 mx-auto w-80"
+            >
+              <img src={project.image} alt={project.title} className="w-full h-40 object-contain rounded-lg mb-4" />
+              <h3 className="text-xl font-semibold">{project.title}</h3>
+              <p className="text-gray-300 text-sm flex-grow mb-4">{project.description}</p>
 
-            <div className="mt-auto flex justify-center gap-4">
-              {project.github && (
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium text-white bg-lime-500 rounded-lg hover:bg-lime-700 transition"
-                >
-                  Voir sur GitHub
-                </a>
-              )}
-              {project.demo && (
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-4 py-2 text-sm font-medium text-white bg-lime-500 rounded-lg hover:bg-lime-700 transition"
-                >
-                  Voir le site
-                </a>
-              )}
+              <div className="mt-auto flex justify-center gap-4">
+                {project.github && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-medium text-white bg-lime-500 rounded-lg hover:bg-lime-700 transition"
+                  >
+                    Voir sur GitHub
+                  </a>
+                )}
+                {project.demo && (
+                  <a
+                    href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-4 py-2 text-sm font-medium text-white bg-lime-500 rounded-lg hover:bg-lime-700 transition"
+                  >
+                    Voir le site
+                  </a>
+                )}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -7,9 +7,12 @@ import { AiOutlineDownload } from "react-icons/ai";
 
 export default function About() {
   return (
-    <div className="flex flex-col items-center text-white p-24 mt-32">
-      <blockquote className="text-center">
-        <p className="text-lg text-justify">
+    <div className="flex flex-col items-center text-white p-15 mt-24 ">
+      <h2 className="text-3xl font-bold mb-10 text-4xl">
+        Qui <span className="text-lime-500 text-4xl">Suis-Je ?</span>
+      </h2>
+      <blockquote className="justify-center py-6 sm:px-10">
+        <p className="text-2xl text-justify">
           Salut à tous, je m'appelle{" "}
           <span className="text-lime-500 font-semibold">Adel Saadna</span> et j'habite à{" "}
           <span className="text-lime-500 font-semibold">Toulouse.</span>
