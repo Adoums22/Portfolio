@@ -12,34 +12,33 @@ export default function About() {
         Qui <span className="text-lime-500 text-4xl">suis-je ?</span>
       </h2>
       <blockquote className="text-center py-6 sm:px-10">
-        <p className="text-2xl text-justify">
+        <p className="text-2xl text-center">
           Bonjour à tous, je m'appelle{" "}
           <span className="text-lime-500 font-semibold">Adel Saadna</span> et j'habite à{" "}
           <span className="text-lime-500 font-semibold">Toulouse.</span>
           <br />
           <br />
-          Je suis actuellement à la recherche d'une{" "}
+          Actuellement à la recherche d'une{" "}
           <span className="text-lime-500 font-semibold">alternance.</span>
           <br />
           <br />
-          J'ai obtenu mon diplôme d'un Bachelor{" "}
+          Diplomé d'un Bachelor{" "}
           <span className="text-lime-500 font-semibold">
             Concepteur Développeur d'Application
           </span>{" "}
           à l'IPI.
           <br />
           <br />
-          Dans mon temps libre, j'adore :
+          Mes activités :
         </p>
 
-        <ul className="mt-4 space-y-2">
+        <ul className="mt-4 space-y-2 text-center">
           {["Jouer aux jeux vidéo", "Voyager", "Faire du sport"].map((hobby, index) => (
-            <li key={index} className="flex items-center text-2xl">
-              <ImPointRight className="text-lime-500 mr-2 text-2xl" /> {hobby}
-            </li>
+          <li key={index} className="flex items-center justify-center text-2xl">
+            <ImPointRight className="text-lime-500 mr-2 text-2xl" /> {hobby}
+          </li>
           ))}
         </ul>
-
         <div className="flex justify-center mt-4">
           <a
             href="/Adel-Saadna-cv.pdf"

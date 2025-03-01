@@ -10,7 +10,7 @@ const email = "adelsaadna22@gmail.com";
 const socialLinks = [
   { href: "https://github.com/Adoums22", icon: <AiFillGithub /> },
   { href: "https://www.linkedin.com/in/adelsaadna", icon: <FaLinkedinIn /> },
-  { href: `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, icon: <SiGmail /> },
+  { href: `mailto:${email}`, icon: <SiGmail /> },
 ];
 
 

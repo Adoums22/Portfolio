@@ -6,7 +6,7 @@ const email = "adelsaadna22@gmail.com";
 
 const socialLinks = [
   { href: "https://github.com/Adoums22", icon: <FaGithub /> },
-  { href: `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, icon: <SiGmail /> },
+  { href: `mailto:${email}`, icon: <SiGmail /> }, // 🔥 Ouvre directement le client mail
   { href: "https://www.linkedin.com/in/adelsaadna", icon: <FaLinkedin /> },
 ];
 
