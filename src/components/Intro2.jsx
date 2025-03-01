@@ -7,7 +7,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 export default function Home2() {
   return (
     <section id="about" className="px-2 text-white">
-      <div className="container mx-auto">
+      <div className="container mx-auto p-5">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h1 className="text-4xl font-bold">

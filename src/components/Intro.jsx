@@ -26,7 +26,7 @@ function Type() {
 export default function Intro() {
   return (
     <section>
-      <div className="home-section p-24" id="home">
+      <div className="home-section p-5 mt-24" id="home">
         <div className="home-content container mx-auto px-4 py-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="home-header flex flex-col justify-center">
