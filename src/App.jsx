@@ -9,12 +9,12 @@ import About from "./components/About/About";
 import SelfProjects from "./components/SelfProjects/SelfProjects";
 import Contact from "./components/Contact/Contact";
 import Loader from "./components/Loader/Loader";
+import ParticlesComponent from "./components/Particle";
 
 export default function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Simule un temps de chargement (ex : 2s)
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -23,9 +23,10 @@ export default function App() {
   return (
     <div className="App">
       {loading ? (
-        <Loader /> // Affiche le loader si le site charge
+        <Loader />
       ) : (
         <>
+          <ParticlesComponent id="tsparticles" className="absolute inset-0 -z-10" />
           <NavBar />
           <Routes>
             <Route path="/" element={<><Intro /><Home2 /></>} />
