@@ -41,8 +41,7 @@ export default function About() {
         </ul>
         <div className="flex justify-center mt-4">
           <a
-            href="/Adel-Saadna-cv.pdf"
-            download="Adel-Saadna-cv.pdf"
+            href="./Adel-Saadna-cv.pdf" download
             className="px-6 py-2 bg-lime-500 text-white rounded-lg flex items-center gap-2 hover:bg-lime-700 transition-all w-fit"
           >
             <AiOutlineDownload className="text-xl animate-bounce" /> Télécharger mon CV
