@@ -1,6 +1,6 @@
 {
-  "homepage": "https://adoums22.github.io/Portfolio",
-  "name": "portfolio",
+  "homepage": "https://Adoums22.github.io/Portfolio",
+  "name": "Portfolio",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -9,7 +9,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
