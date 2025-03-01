@@ -14,7 +14,7 @@ export default function OutilsCard() {
   return (
     <div className="py-12">
       <h2 className="text-4xl font-bold text-white text-center mb-12">
-        Outils <span className="text-lime-500">Logiciels</span>
+        Outils <span className="text-lime-500">logiciels</span>
       </h2>
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-10 justify-items-center">
         {techIcons.map((tech, index) => (
@@ -23,6 +23,7 @@ export default function OutilsCard() {
             className="flex flex-col items-center justify-center w-32 h-32 border-4 border-lime-500 rounded-2xl text-white text-6xl p-6 transition-all hover:scale-110 shadow-lg shadow-lime-500"
           >
             {tech.icon}
+            <p className="text-base text-white mt-2">{tech.name}</p>
           </div>
         ))}
       </div>

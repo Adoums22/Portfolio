@@ -5,7 +5,7 @@ export default function Github() {
   return (
     <div className="flex flex-col items-center pb-10 px-4 w-full">
       <h1 className="text-2xl font-bold text-white pb-5 text-center">
-        Days I <span className="text-lime-500">Code</span>
+      Activité <span className="text-lime-500">GitHub</span>
       </h1>
       <div className="w-full overflow-x-auto flex justify-center">
         <GitHubCalendar

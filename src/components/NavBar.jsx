@@ -53,7 +53,7 @@ export default function NavBar() {
         >
           {[
             { to: "/", label: "Introduction", icon: <AiOutlineHome className="text-xl" /> },
-            { to: "/about", label: "A propos", icon: <AiOutlineUser className="text-xl" /> },
+            { to: "/about", label: "À propos", icon: <AiOutlineUser className="text-xl" /> },
             { to: "/projects", label: "Projets", icon: <CgFileDocument className="text-xl" /> },
             { to: "/contact", label: "Contactez-moi", icon: <ImBlog className="text-xl" /> },
           ].map((item, index) => (

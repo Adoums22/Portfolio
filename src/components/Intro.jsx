@@ -11,7 +11,6 @@ function Type() {
               "Développeur Logiciel",
               "Freelancer",
               "Développeur Mobile",
-              "Ingénieur Développeur",
             ],
             autoStart: true,
             loop: true,
@@ -31,10 +30,7 @@ export default function Intro() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="home-header flex flex-col justify-center">
               <h1 className="text-4xl md:text-5xl font-bold pb-4 text-white">
-               Salut!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
-                  👋🏻
-                </span>
+               Bienvenue{" "}
               </h1>
               <h1 className="text-4xl md:text-5xl font-semibold text-white">
                 Je m'appelle

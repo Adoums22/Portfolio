@@ -37,10 +37,10 @@ export default function Contact() {
     <section id="contact" className="py-16 text-white p-5 mt-20 flex-grow flex-col min-h-screen">
       <div className="container mx-auto text-center px-4">
       <h2 className="text-4xl font-bold mb-10">
-        Me <span className="text-lime-500">Contacter</span>
+        Contactez-<span className="text-lime-500">moi</span>
       </h2>
         <p className="text-lg mb-8 text-gray-300">
-          Une question, un projet ? Envoie-moi un message !
+          Une question, un projet ? Envoyez-moi un message !
         </p>
 
         <form ref={form} onSubmit={sendEmail} className="max-w-lg mx-auto space-y-6">

@@ -28,6 +28,7 @@ export default function TechCards() {
             className="flex flex-col items-center justify-center w-32 h-32 border-4 border-lime-500 rounded-2xl text-white text-6xl p-6 transition-all hover:scale-110 shadow-lg shadow-lime-500"
           >
             {tech.icon}
+            <p className="text-base text-white mt-2">{tech.name}</p>
           </div>
         ))}
       </div>

@@ -9,16 +9,18 @@ export default function About() {
   return (
     <div className="flex flex-col items-center text-white p-15 mt-24 ">
       <h2 className="text-3xl font-bold mb-10 text-4xl">
-        Qui <span className="text-lime-500 text-4xl">Suis-Je ?</span>
+        Qui <span className="text-lime-500 text-4xl">suis-je ?</span>
       </h2>
-      <blockquote className="justify-center py-6 sm:px-10">
+      <blockquote className="text-center py-6 sm:px-10">
         <p className="text-2xl text-justify">
-          Salut à tous, je m'appelle{" "}
+          Bonjour à tous, je m'appelle{" "}
           <span className="text-lime-500 font-semibold">Adel Saadna</span> et j'habite à{" "}
           <span className="text-lime-500 font-semibold">Toulouse.</span>
           <br />
+          <br />
           Je suis actuellement à la recherche d'une{" "}
           <span className="text-lime-500 font-semibold">alternance.</span>
+          <br />
           <br />
           J'ai obtenu mon diplôme d'un Bachelor{" "}
           <span className="text-lime-500 font-semibold">
@@ -32,8 +34,8 @@ export default function About() {
 
         <ul className="mt-4 space-y-2">
           {["Jouer aux jeux vidéo", "Voyager", "Faire du sport"].map((hobby, index) => (
-            <li key={index} className="flex items-center">
-              <ImPointRight className="text-lime-500 mr-2" /> {hobby}
+            <li key={index} className="flex items-center text-2xl">
+              <ImPointRight className="text-lime-500 mr-2 text-2xl" /> {hobby}
             </li>
           ))}
         </ul>

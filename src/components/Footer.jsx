@@ -1,27 +1,33 @@
 import React from "react";
-import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+
+const email = "adelsaadna22@gmail.com";
+
+const socialLinks = [
+  { href: "https://github.com/Adoums22", icon: <FaGithub /> },
+  { href: `https://mail.google.com/mail/?view=cm&fs=1&to=${email}`, icon: <SiGmail /> },
+  { href: "https://www.linkedin.com/in/adelsaadna", icon: <FaLinkedin /> },
+];
 
 export default function Footer() {
   return (
     <footer className="bg-black text-white py-6">
       <div className="container mx-auto flex flex-col items-center text-center px-4">
         <p className="text-lg">
-          Conçu et développé par <span className="font-bold">Adel SAADNA</span> © 2025 |
+          Conçu et développé par <span className="font-bold">Adel SAADNA</span> © 2025 |  
           Réalisé avec React.js, Vite et Tailwind CSS
         </p>
-        <div className="mt-4 flex space-x-6">
-          {[
-            { href: "https://www.linkedin.com/in/adelsaadna", icon: <FaLinkedin /> },
-            { href: "https://github.com/Adoums22", icon: <FaGithub /> },
-          ].map((social, index) => (
+        <div className="flex justify-center gap-6 mt-6">
+          {socialLinks.map(({ href, icon }, index) => (
             <a
               key={index}
-              href={social.href}
+              href={href}
               target="_blank"
-              rel="noopener noreferrer"
-              className="text-2xl hover:text-lime-500 transition-all"
+              rel="noreferrer"
+              className="text-3xl text-gray-400 hover:text-lime-500 transition"
             >
-              {social.icon}
+              {icon}
             </a>
           ))}
         </div>
